@@ -33,6 +33,23 @@ public class S_Destroyable : MonoBehaviour
         isOnDamage = true;
         CancelInvoke();
         Invoke("ResetResize", 2.0f);
+
+        switch (gameObject.tag)
+        {
+            case "Crystal":
+                FindObjectOfType<S_ResourceHolder>().Crystals += dmg;
+                break;
+            case "Stone":
+                FindObjectOfType<S_ResourceHolder>().Stones += dmg;
+                break;
+            case "Wood":
+                FindObjectOfType<S_ResourceHolder>().Woods += dmg;
+                break;
+            default:
+                break;
+        }
+
+        FindObjectOfType<S_ResourceHolder>().UpdateUI();
     }
 
     void ResetResize()

@@ -58,6 +58,7 @@ public class S_Bullet : MonoBehaviour
         if(col.gameObject.tag == "Enemy")
         {
             col.gameObject.GetComponent<S_Enemy>().TakeDamage(Damage);
+            Destroy(gameObject);
         }
     }
 }
