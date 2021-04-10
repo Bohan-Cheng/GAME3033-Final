@@ -11,6 +11,7 @@ public class S_PickUp : MonoBehaviour
         if(other.tag == "Player")
         {
             other.GetComponent<S_WeaponHolder>().UseWeapon(WeaponName);
+            Destroy(gameObject);
         }
     }
 }

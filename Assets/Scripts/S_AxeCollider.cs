@@ -25,5 +25,11 @@ public class S_AxeCollider : MonoBehaviour
             axeScript.playHit();
             dest.ApplyDamage(axeScript.Damage);
         }
+
+        if (other.tag == "Enemy")
+        {
+            axeScript.playHit();
+            other.GetComponent<S_Enemy>().TakeDamage(axeScript.Damage);
+        }
     }
 }

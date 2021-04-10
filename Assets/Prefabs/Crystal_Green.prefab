@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 150433667338381440}
   m_Layer: 0
   m_Name: Crystal_Light_Blue_01 1
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 150433667795482244}
   m_Layer: 0
-  m_Name: Crystal_Light_Blue_01 (3)
+  m_Name: Crystal_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

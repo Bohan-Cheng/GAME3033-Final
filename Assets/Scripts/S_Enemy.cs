@@ -21,7 +21,6 @@ public class S_Enemy : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(transform.position, player.transform.position);
-        Debug.Log("Dist: " + dist);
         if(dist <= visionRange)
         {
             agent.isStopped = false;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class S_Axe : MonoBehaviour
 {
-    public int Damage = 1;
+    public int Damage = 2;
     [SerializeField] private float FireRate = 1.0f;
     [SerializeField] private Animator anim;
     [SerializeField] private AudioSource sound;
